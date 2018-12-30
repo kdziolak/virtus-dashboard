@@ -1,19 +1,13 @@
 import React from 'react';
 import { StyledCardPanel, ProjectsBox } from './CardPanelStyles'
 import CardHeader from './CardHeader/CardHeader';
-import Project from './ProjectsCard/Project';
 
-const CardPanel = () => {
+const CardPanel = (props) => {
     return (
         <StyledCardPanel>
             <CardHeader></CardHeader>
             <ProjectsBox>
-                <Project></Project>
-                <Project></Project>
-                <Project></Project>
-                <Project></Project>
-                <Project></Project>
-                <Project></Project>
+                {props.children}
             </ProjectsBox>
         </StyledCardPanel>
     );

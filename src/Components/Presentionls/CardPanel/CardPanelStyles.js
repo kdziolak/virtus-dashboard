@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledCardPanel = styled.div`
+    position:relative;
     margin-top: 8vh;
     margin-left: 7.5%;
     width: 85%;
