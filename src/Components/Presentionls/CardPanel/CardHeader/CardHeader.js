@@ -2,10 +2,10 @@ import React from 'react';
 import { StyledCardHeader } from './CardHeaderStyles';
 import Text from './Text/Text'
 
-const CardHeader = () => {
+const CardHeader = ({ headerTitle, notyfications }) => {
     return (
         <StyledCardHeader>
-            <Text />
+            <Text text={headerTitle} notyfications={notyfications} />
         </StyledCardHeader>
     );
 }

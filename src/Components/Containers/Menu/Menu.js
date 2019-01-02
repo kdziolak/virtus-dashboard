@@ -63,7 +63,7 @@ class Menu extends Component {
                     <StyledLi>
                         <StyledLink to='/' data-name='home' onClick={() => this.handleClick('envelope')} >
                             <IconButton width="100%" active={envelope} icon="fas fa-envelope" >
-                                <NotificationCircle top='7px' right='20px' />
+                                <NotificationCircle top='15%;' right='23%' />
                             </IconButton>
                         </StyledLink>
                     </StyledLi>

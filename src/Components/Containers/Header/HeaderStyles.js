@@ -4,11 +4,14 @@ import styled from 'styled-components';
 export const StyledHeader = styled.header`
     flex-grow: 1;
     width: 100%;
+    height:100%;
     background-color: #2f3242;
     display: flex;
     align-items:center;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 `
 
 export const LeftSide = styled.div`

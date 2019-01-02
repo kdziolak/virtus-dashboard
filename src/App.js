@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components'
 import Header from './Components/Containers/Header/Header'
 import Menu from './Components/Containers/Menu/Menu'
 import MainBoard from './Components/Containers/Boards/MainBoard/MainBoard';
-import Fullscreen from 'react-full-screen'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -21,13 +20,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: #2a2c3b;
   }
 
-  @media all and (display-mode: Fullscreen) {
-  body {
-    /* margin: 0;
-    border: 5px solid black; */
-  }
-}
-
 `
 
 const Row = styled.div`
@@ -42,8 +34,7 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction:column;
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
+  min-height: 100vh;
 `
 
 class App extends Component {
@@ -52,15 +43,13 @@ class App extends Component {
 
       <div className='App'>
         <GlobalStyle />
-        {/* <Fullscreen enabled={true}> */}
-        <FlexContainer className='full-screenable-node'>
+        <FlexContainer>
           <Header />
           <Row>
             <Menu></Menu>
             <MainBoard></MainBoard>
           </Row>
         </FlexContainer>
-        {/* </Fullscreen> */}
       </div>
     );
   }
