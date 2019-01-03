@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledText } from './TextStyles'
+import { StyledText, StyledSpan } from './TextStyles'
 
-const Text = ({ text, notyfications }) => <StyledText>{text} {notyfications ? `(${notyfications})` : ''}</StyledText>
+const Text = ({ text, notyfications }) => <StyledText>{text} {notyfications ? '(' : ''}{notyfications ? <StyledSpan>{notyfications}</StyledSpan> : ''}{notyfications ? ')' : ''}</StyledText>
 
 
 export default Text;    

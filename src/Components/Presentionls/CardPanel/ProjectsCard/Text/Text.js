@@ -1,11 +1,14 @@
 import React from 'react';
-import { StyledText, StyledH3, StyledP, StyledWebPage, StyledPrice} from './TextStyle'
+import { StyledText, StyledH3, StyledP, StyledWebPage, StyledPrice, StyledDate, FlexContainer } from './TextStyle'
 
-const Text = ({ title, link, price }) => {
+const Text = ({ text, title, link, price, dot, date }) => {
     return (
-        <StyledText>
-            <StyledH3>{title}</StyledH3>
-            <StyledP><StyledWebPage>{link} </StyledWebPage><i class="fas fa-circle"></i><StyledPrice>${price}</StyledPrice></StyledP>
+        <StyledText text={text}>
+            <FlexContainer>
+                <StyledH3>{title}</StyledH3>
+                {date ? <StyledDate>{date}</StyledDate> : null}
+            </FlexContainer>
+            {text ? <StyledP text={text}>{text}</StyledP> : <StyledP><StyledWebPage>{link} </StyledWebPage><i class="fas fa-circle"></i><StyledPrice>${price}</StyledPrice></StyledP>}
         </StyledText>
     );
 }

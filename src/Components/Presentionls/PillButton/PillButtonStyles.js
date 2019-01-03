@@ -1,24 +1,24 @@
 import styled from 'styled-components'
 
 export const StyledPillButton = styled.button`
-        position: fixed;
-        bottom: 12vh;
-        right: 5vh;
+        position: ${({ position }) => position ? position : 'fixed'};
+        bottom: ${({ bottom }) => bottom ? bottom : '12vh'};
+        right: ${({ right }) => right ? right : '5vh'};
         outline: none;
         border: none;
-        background-color: #2196f3;
+        background-color: ${({ bgc }) => bgc ? bgc : '#2196f3'};
         width: ${({ width }) => width ? width : "10vh"}; 
         height: ${({ height }) => height ? height : "10vh"};
         border: ${({ border }) => border ? border : "2px solid #2196f3"};
-        border-radius: 50%;
+        border-radius: ${({ borderRadius }) => borderRadius ? borderRadius : '50%'};
         display: flex;
         justify-content:center;
         align-items:center;
         z-index: 1;
         &>p {
-            display:none;
+            display:${({ display }) => display ? display : 'none'};
         }
-        &>.fa-plus {
+        &>span {
             color: #2a2c3b;
             font-size: 2rem;
             transition: .3s linear .3s;

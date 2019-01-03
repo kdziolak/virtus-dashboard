@@ -5,3 +5,8 @@ export const StyledText = styled.p`
     font-weight: 700;
     color: white;
 `
+
+export const StyledSpan = styled.span`
+    color: #2196f3;
+`
+
