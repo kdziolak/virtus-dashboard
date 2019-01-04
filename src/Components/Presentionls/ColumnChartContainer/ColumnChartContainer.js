@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledColumnChartContainer, StyledChart, Title, Scroll, FlexContainer } from './ColumnChartContainerStyles'
-import PillButton from '../PillButton/PillButton'
+import PillSelect from '../PillSelect/PillSelect';
 
 const ColumnChartContainer = (props) => {
     return (
@@ -8,15 +8,18 @@ const ColumnChartContainer = (props) => {
             <FlexContainer>
                 <Title>Sales raport</Title>
                 <p>
-                    <PillButton
+                    <PillSelect
                         position='relative'
                         bottom='0'
                         right='0'
                         bgc='transparent'
                         display='block'
                         width='10rem'
-                        height='2rem'
+                        height='2.5rem'
                         borderRadius='2.5rem'
+                        border='1px solid #2f3242'
+                        icon='fas fa-angle-down'
+                        text='year'
                     />
                 </p>
             </FlexContainer>

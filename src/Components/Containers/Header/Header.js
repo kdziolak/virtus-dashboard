@@ -13,7 +13,7 @@ const Header = () => {
                 <Logo />
             </LeftSide>
             <RightSide>
-                <PillButton />
+                <PillButton icon='fas fa-plus' />
                 <IconButton width active='white' icon='fas fa-search' />
                 <IconButton width active='white' icon='far fa-bell' >
                     <NotificationCircle />

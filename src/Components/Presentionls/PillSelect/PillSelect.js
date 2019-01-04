@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyledPillButton } from './PillButtonStyles'
+import { StyledPillSelect } from './PillSelectStyles'
 
-const PillButton = (props) => {
+const PillSelect = (props) => {
     return (
-        <StyledPillButton
+        <StyledPillSelect
             position={props.position}
             bottom={props.bottom}
             right={props.right}
@@ -13,12 +13,11 @@ const PillButton = (props) => {
             display={props.display}
             borderRadius={props.borderRadius}
             border={props.border}
-            value={props.text}
+            icon={props.icon}
         >
-            <p>{props.text}</p>
-            <span className={`${props.icon}`}></span>
-        </StyledPillButton>
+            <option selected style={{ display: 'none' }}>{props.text}</option>
+        </StyledPillSelect>
     );
 }
 
-export default PillButton;
+export default PillSelect;
