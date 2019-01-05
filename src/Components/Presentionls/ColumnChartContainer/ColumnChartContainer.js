@@ -7,21 +7,19 @@ const ColumnChartContainer = (props) => {
         <StyledColumnChartContainer>
             <FlexContainer>
                 <Title>Sales raport</Title>
-                <p>
-                    <PillSelect
-                        position='relative'
-                        bottom='0'
-                        right='0'
-                        bgc='transparent'
-                        display='block'
-                        width='10rem'
-                        height='2.5rem'
-                        borderRadius='2.5rem'
-                        border='1px solid #2f3242'
-                        icon='fas fa-angle-down'
-                        text='year'
-                    />
-                </p>
+                <PillSelect
+                    position='relative'
+                    bottom='0'
+                    right='0'
+                    bgc='transparent'
+                    display='block'
+                    width='12rem'
+                    height='3rem'
+                    borderRadius='2.5rem'
+                    border='1px solid #505464'
+                    icon='fas fa-angle-down'
+                    text='year'
+                />
             </FlexContainer>
             <StyledChart>
                 <Scroll>

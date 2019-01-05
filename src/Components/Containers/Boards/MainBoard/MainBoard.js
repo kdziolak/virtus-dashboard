@@ -6,10 +6,12 @@ import Project from '../../../Presentionls/CardPanel/ProjectsCard/Project'
 import ColumnChartContainer from '../../../Presentionls/ColumnChartContainer/ColumnChartContainer'
 import BarComponent from '../../../Presentionls/BarComponent/BarComponent'
 import Calendar from 'react-calendar'
+import ScatterComponent from '../../../Presentionls/ScatterComponent/ScatterComponent'
 
 const MainBoard = () => {
     return (
         <StyledMainBoard>
+            <ScatterComponent />
             <ColumnChartContainer>
                 <BarComponent></BarComponent>
             </ColumnChartContainer>

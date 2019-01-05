@@ -30,10 +30,12 @@ export const Scroll = styled.div`
 
 export const Title = styled.h2`
     font-size: 1.7rem;
+    width: 50%;
 `
 
 export const FlexContainer = styled.h2`
     width: 100%;
     display:flex;
-    justify-content: space-between
+    align-items: center;
+    justify-content: space-between;
 `

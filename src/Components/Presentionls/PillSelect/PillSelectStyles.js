@@ -1,42 +1,33 @@
 import styled from 'styled-components'
+import chevron from './img/chevron-down.png'
 
 export const StyledPillSelect = styled.select`
+        display: flex;
+        justify-content:center;
+        align-items:center;
         position: ${({ position }) => position ? position : 'fixed'};
-        position:relative;
         bottom: ${({ bottom }) => bottom ? bottom : '12vh'};
         right: ${({ right }) => right ? right : '5vh'};
+        padding-left: 5%;
+        font-weight: 700;
+        text-transform: capitalize;
         outline: none;
         border: none;
+        color: #505464;
         background-color: ${({ bgc }) => bgc ? bgc : '#2196f3'};
         width: ${({ width }) => width ? width : "10vh"}; 
         height: ${({ height }) => height ? height : "10vh"};
         border: ${({ border }) => border ? border : "2px solid #2196f3"};
         border-radius: ${({ borderRadius }) => borderRadius ? borderRadius : '50%'};
-        display: flex;
-        justify-content:center;
-        align-items:center;
         z-index: 1;
         -moz-appearance:none; /* Firefox */
         -webkit-appearance:none; /* Safari and Chrome */
         appearance:none;
-        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right transparent;
-        background-position-x: 8rem;
+        background: url(${chevron}) no-repeat  transparent;
+        background-position-x: 85%;
+        background-position-y: 50%;
         background-size: 10%;
-        &:before{
-            content: "\25AE";  /* this is your text. You can also use UTF-8 character codes as I do here */
-            font-family: "Font Awesome 5 Free";
-            left:-5px;
-            position:absolute;
-            top:0;
-        }
-        &>p {
-            display:${({ display }) => display ? display : 'none'};
-        }
-        &>span {
-            color: #2a2c3b;
-            font-size: 2rem;
-            transition: .3s linear .3s;
-        }
+
     @media screen and (min-width: 520px){
         position: relative;
         outline: none;

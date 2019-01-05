@@ -15,7 +15,9 @@ const PillSelect = (props) => {
             border={props.border}
             icon={props.icon}
         >
-            <option selected style={{ display: 'none' }}>{props.text}</option>
+            <option selected>{props.text}</option>
+            <option >abc</option>
+            <option >xyz</option>
         </StyledPillSelect>
     );
 }

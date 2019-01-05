@@ -67,10 +67,7 @@ class BarComponent extends Component {
                                 fontWeight: '700',
                                 padding: 10
                             },
-                            gridLines: {
-                                color: 'red'
-                            },
-                            gridLines: [{}]
+                            gridLines: [{ color: 'red' }]
                         }]
                     },
                     title: null

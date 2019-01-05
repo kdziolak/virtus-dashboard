@@ -69,7 +69,8 @@ class Menu extends Component {
                     </StyledLi>
                     <StyledLi>
                         <StyledLink to='/' data-name='home' onClick={() => this.handleClick('users')} >
-                            <IconButton width="100%" active={users} icon="fas fa-users" />
+                            <IconButton width="100%" active={users} icon="fas fa-users" >
+                            </IconButton>
                         </StyledLink>
                     </StyledLi>
                 </StyledUl>
