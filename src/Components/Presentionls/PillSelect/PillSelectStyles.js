@@ -19,7 +19,7 @@ export const StyledPillSelect = styled.select`
         height: ${({ height }) => height ? height : "10vh"};
         border: ${({ border }) => border ? border : "2px solid #2196f3"};
         border-radius: ${({ borderRadius }) => borderRadius ? borderRadius : '50%'};
-        z-index: 1;
+        z-index: 0;
         -moz-appearance:none; /* Firefox */
         -webkit-appearance:none; /* Safari and Chrome */
         appearance:none;

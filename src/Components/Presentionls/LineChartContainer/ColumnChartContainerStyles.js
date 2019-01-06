@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledColumnChartContainer = styled.div`
+export const StyledLineChartContainer = styled.div`
     margin-top: 30px;
     width: 85%;
     min-height: 50vh;
@@ -27,12 +27,6 @@ export const Scroll = styled.div`
     min-height: 35vh;
     overflow: hidden;
 `
-
-export const Title = styled.h2`
-    font-size: 1.7rem;
-    width: 50%;
-`
-
 export const FlexContainer = styled.div`
     width: 100%;
     display:flex;

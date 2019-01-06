@@ -4,14 +4,17 @@ import { StyledMainBoard } from './MainBoardStyles'
 import CardPanel from '../../../Presentionls/CardPanel/CardPanel'
 import Project from '../../../Presentionls/CardPanel/ProjectsCard/Project'
 import ColumnChartContainer from '../../../Presentionls/ColumnChartContainer/ColumnChartContainer'
+import LineChartContainer from '../../../Presentionls/LineChartContainer/LineChartContainer'
 import BarComponent from '../../../Presentionls/BarComponent/BarComponent'
 import Calendar from 'react-calendar'
-import ScatterComponent from '../../../Presentionls/ScatterComponent/ScatterComponent'
+import LineComponent from '../../../Presentionls/LineComponent/LineComponent'
 
 const MainBoard = () => {
     return (
         <StyledMainBoard>
-            <ScatterComponent />
+            <LineChartContainer>
+                <LineComponent />
+            </LineChartContainer>
             <ColumnChartContainer>
                 <BarComponent></BarComponent>
             </ColumnChartContainer>
