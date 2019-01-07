@@ -9,7 +9,7 @@ const Project = (props) => {
     return (
         <StyledProject text={text}>
             <LeftSide ellipsis={ellipsis}>
-                <Avatar size='35px' avatarImg={avatarImg} />
+                <Avatar size='3.5rem' avatarImg={avatarImg} />
                 <Text title={title} link={link} price={price} dot={dot} date={date} text={text}></Text>
             </LeftSide>
             <RightSide ellipsis={ellipsis}>

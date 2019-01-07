@@ -5,9 +5,12 @@ export const StyledCardPanel = styled.div`
     margin-top: 8vh;
     margin-left: 7.5%;
     width: 85%;
-    height: 60vh;
+    height: 55vh;
     background-color: #2e3141;
     overflow: hidden;
+    @media screen and (orientation: landscape) and (min-width: 550px){
+        height: 65vh
+    }
 `
 
 export const ProjectsBox = styled.section`

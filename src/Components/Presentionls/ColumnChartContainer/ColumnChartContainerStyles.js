@@ -20,6 +20,7 @@ export const StyledColumnChartContainer = styled.div`
 export const StyledChart = styled.div`
     width: 100%;
     min-height: 35vh;
+    margin-top: 2rem;
     overflow-x: scroll;
 `
 export const Scroll = styled.div`

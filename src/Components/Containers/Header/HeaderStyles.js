@@ -16,8 +16,11 @@ export const StyledHeader = styled.header`
 
 export const LeftSide = styled.div`
     width: 65%;
-    @media screen and (min-width: 520px){
-        width:75%;
+    @media screen and (min-width: 768px){
+        width:50%;
+    }
+    @media screen and (orientation: landscape) and (min-width: 550px){
+        width:50%;
     }
 `
 
@@ -26,15 +29,19 @@ export const RightSide = styled.div`
     display:flex;
     justify-content: space-around;
     align-items:center;
-    @media screen and (min-width: 520px){
-        width:25%;
+    @media screen and (min-width:768px){
+        width:50%;
+    }
+    @media screen and (orientation: landscape) and (min-width: 550px){
+        width:50%;
     }
    
 `
 
 export const NoneDisplayAvatar = styled.div`
     display: none;
-    @media screen and (min-width:520px) {
+    @media screen and (min-width:768px) {
         display: block;
     }
+    
 `

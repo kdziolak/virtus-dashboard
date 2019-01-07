@@ -7,4 +7,7 @@ export const StyledCardHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (orientation: landscape) and (min-width: 550px){
+        height: 30%;
+    }
 `

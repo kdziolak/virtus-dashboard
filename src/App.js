@@ -15,6 +15,15 @@ const GlobalStyle = createGlobalStyle`
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    @media screen and (orientation: landscape) and (min-width: 550px){
+        font-size: 9px;
+    }
+    @media screen and (orientation: landscape) and (min-width: 750px){
+        font-size: 11px;
+    }
+    @media screen and (orientation: portrait) and (min-width: 768px){
+        font-size: 14px;
+    }
   }
   body{
     background-color: #2a2c3b;

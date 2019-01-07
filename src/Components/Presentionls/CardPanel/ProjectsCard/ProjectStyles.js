@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledProject = styled.section`
     width: 100%;
-    min-height: ${({ text }) => text ? '25%' : '25%'};
+    min-height: 25%;
     display: flex;
     align-items: center;
     padding: 0% 5%;

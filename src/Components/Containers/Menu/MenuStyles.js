@@ -10,10 +10,9 @@ export const StyledMenu = styled.nav`
     bottom: 0;
     left:0;
     z-index:1;
-    @media screen and (min-width: 520px){
-        width: 6vw;
-        height: 100%;
-        position: relative;
+    @media screen and (orientation: landscape) and (min-width: 550px){
+        width: 100%;
+        height: 14vh;
     }
 `
 
@@ -37,7 +36,7 @@ export const StyledUl = styled.ul`
         transition: transform 0.3s;
         will-change: transform;
     }
-    @media screen and (min-width: 520px){
+    @media screen and (orientation: portrait) and (min-width: 769px){
         width: 6vw;
         height:auto;
         flex-direction: column;
@@ -47,7 +46,7 @@ export const StyledUl = styled.ul`
 export const StyledLi = styled.li`
     height: 100%;
     width: 100%;
-    @media screen and (min-width: 520px){
+    @media screen and (min-width: 769px){
         width: 100%;
         height:6vw;
         &:hover {

@@ -6,7 +6,11 @@ import IconButton from '../../Presentionls/IconButton/IconButton'
 import NotificationCircle from '../../Presentionls/NotificationCircle/NotificationCircle'
 import Avatar from '../../Presentionls/Avatar/Avatar'
 
+
+
 const Header = () => {
+    const { angle } = window.screen.orientation
+    console.log(angle)
     return (
         <StyledHeader>
             <LeftSide>
@@ -16,7 +20,7 @@ const Header = () => {
                 <PillButton icon='fas fa-plus' />
                 <IconButton width active='white' icon='fas fa-search' />
                 <IconButton width active='white' icon='far fa-bell' >
-                    <NotificationCircle />
+                    <NotificationCircle right='header'/>
                 </IconButton>
                 <IconButton width active='white' icon='fas fa-angle-down' >
                     <NoneDisplayAvatar>
