@@ -20,11 +20,11 @@ class Menu extends Component {
     handleClick = value => {
         let prevActive = this.state.nowActive;
         let position = '';
-        if (value === 'home') position = '-200%';
-        else if (value === 'bars') position = '-100%'
-        else if (value === 'line') position = '0%'
-        else if (value === 'envelope') position = '100%'
-        else if (value === 'users') position = '200%'
+        if (value === 'home') position = -200;
+        else if (value === 'bars') position = -100
+        else if (value === 'line') position = 0
+        else if (value === 'envelope') position = 100
+        else if (value === 'users') position = 200
 
         this.setState(prevState => {
             return {

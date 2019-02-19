@@ -14,6 +14,10 @@ export const StyledMenu = styled.nav`
         width: 100%;
         height: 14vh;
     }
+    @media screen and (min-width: 1024px){
+        width: 7rem;
+        height:91vh;
+    }
 `
 
 export const StyledUl = styled.ul`
@@ -28,7 +32,7 @@ export const StyledUl = styled.ul`
         content: '';
         position: absolute;
         top:0;
-        transform: ${({ position }) => position ? `translateX(${position})` : 'translateX(-100%)'};
+        transform: ${({ position }) => position || position === 0 ? `translateX(${position}%) translateY(0)` : 'translateX(-100%) translateY(0)'};
         width: 20%;
         height: 100%;
         background-color: #3a3e52;
@@ -41,12 +45,35 @@ export const StyledUl = styled.ul`
         height:auto;
         flex-direction: column;
     }
+    @media screen and (min-width: 1024px){
+        width: 100%;
+        height:auto;
+        flex-direction: column;
+        &:before{
+            position: absolute;
+            top:0;
+            transform: ${({ position }) => position || position === 0 ? `translateY(${position + 200}%)` : `translateY(${position + 100}%)`};
+            width: 100%;
+            height: 20%;
+            background-color: #3a3e52;
+            -webkit-transition: -webkit-transform 300ms;
+            transition: transform 0.3s;
+            will-change: transform;
+        }
+    }
 
 `
 export const StyledLi = styled.li`
     height: 100%;
     width: 100%;
     @media screen and (min-width: 769px){
+        width: 100%;
+        height:6vw;
+        &:hover {
+            background-color: #3f4353;
+        }
+    }
+    @media screen and (min-width: 1024px){
         width: 100%;
         height:6vw;
         &:hover {

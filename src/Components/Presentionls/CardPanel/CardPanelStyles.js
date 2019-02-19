@@ -8,8 +8,14 @@ export const StyledCardPanel = styled.div`
     height: 55vh;
     background-color: #2e3141;
     overflow: hidden;
-    @media screen and (orientation: landscape) and (min-width: 550px){
-        height: 65vh
+    @media screen and (orientation: landscape) and (min-width: 560px){
+        height: 75vh
+    }
+    @media screen and (min-width: 1024px){
+        width:${({ headerTitle }) => (headerTitle === 'calendar' || headerTitle === 'Inbox') ? '28%' : '23%'};
+        height: ${({ headerTitle }) => (headerTitle === 'calendar' || headerTitle === 'Inbox') ? '40vh' : '45vh'};
+        padding:0;
+        margin:0;
     }
 `
 

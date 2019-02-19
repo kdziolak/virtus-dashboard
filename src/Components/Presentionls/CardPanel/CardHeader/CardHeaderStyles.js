@@ -10,4 +10,7 @@ export const StyledCardHeader = styled.header`
     @media screen and (orientation: landscape) and (min-width: 550px){
         height: 30%;
     }
+    @media screen and (min-width: 1024px){
+        height: 20%;
+    }
 `

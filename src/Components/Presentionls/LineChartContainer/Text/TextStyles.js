@@ -8,12 +8,19 @@ export const StyledText = styled.p`
     align-items:flex-start;
     justify-content: space-around;
     padding-left: 5vw;
+    @media screen and (min-width: 1024px){
+        padding-left:2rem;
+    }
 `
 
 export const Amount = styled.span`
     font-size: 2rem;
     font-weight: 900;
     color: #fff;
+    @media screen and (min-width: 1024px){
+        font-size: 1.5rem;
+
+    }
 
 `
 
@@ -22,5 +29,9 @@ export const Title = styled.span`
     font-weight: 700;
     text-transform: uppercase;
     color: rgba(156, 161, 178, 255);
+    @media screen and (min-width: 1024px){
+        font-size: 1.1rem;
+
+    }
 
 `

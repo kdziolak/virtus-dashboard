@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import profile from './img/profile.jpg'
 
 export const StyledAvatar = styled.div`
         width: ${({ size }) => size ? size : '4rem'};
@@ -10,4 +9,5 @@ export const StyledAvatar = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         margin-right: 1rem;
+        
 `

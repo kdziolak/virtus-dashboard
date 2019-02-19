@@ -5,7 +5,7 @@ import Text from './Text/Text'
 const CardHeader = ({ headerTitle, notyfications }) => {
     return (
         <StyledCardHeader>
-            <Text text={headerTitle} notyfications={notyfications} />
+            <Text text={headerTitle !== 'calendar' ? headerTitle : ''} notyfications={notyfications} />
         </StyledCardHeader>
     );
 }

@@ -4,9 +4,9 @@ import CardHeader from './CardHeader/CardHeader';
 
 const CardPanel = (props) => {
     return (
-        <StyledCardPanel>
+        <StyledCardPanel headerTitle={props.headerTitle}>
             <CardHeader headerTitle={props.headerTitle} notyfications={props.notyfications}></CardHeader>
-            <ProjectsBox>
+            <ProjectsBox headerTitle={props.headerTitle}>
                 {props.children}
             </ProjectsBox>
         </StyledCardPanel>

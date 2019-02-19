@@ -51,10 +51,9 @@ class LineComponent extends Component {
         return (
             <Line
                 data={this.getData}
-                getElementsAtEvent={(elems) => {
-                    console.log(elems);
-                }}
+                height={10}
                 options={{
+                    maintainAspectRatio: false,
                     legend: {
                         display: false
                     },
