@@ -20,4 +20,7 @@ export const LeftSide = styled.div`
     display:flex;
     align-items: center;
     justify-content: flex-start;
+    @media screen and (orientation:portrait) and (min-width: 760px){
+        min-height: 0vh;
+    }
 `

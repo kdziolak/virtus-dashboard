@@ -100,12 +100,33 @@
         width: 50%;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (orientation:portrait) and (min-width: 760px){
+    .react-calendar.calendar{
+        padding: 0rem;
+        margin-top:0rem;
+    }
+    .react-calendar__month-view__days > button
+    {
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (orientation:landscape) and (min-width: 1024px){
     .react-calendar.calendar{
         margin: 0;
+        padding: 5rem 5rem;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding: 1rem 1rem;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .react-calendar__month-view__days > button
+    {
+        padding: 4% !important; 
+    }
+    .react-calendar__navigation{
+        top: 3%;
     }
 }

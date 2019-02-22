@@ -14,8 +14,9 @@ const PillSelect = (props) => {
             borderRadius={props.borderRadius}
             border={props.border}
             icon={props.icon}
+            defaultValue={props.text}
         >
-            <option selected>{props.text}</option>
+            <option >{props.text}</option>
             <option >abc</option>
             <option >xyz</option>
         </StyledPillSelect>

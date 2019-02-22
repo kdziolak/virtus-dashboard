@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledHeader, LeftSide, RightSide, NoneDisplayAvatar } from './HeaderStyles'
+import { StyledHeader, LeftSide, RightSide, NoneDisplayAvatar, IconsContainer } from './HeaderStyles'
 import Logo from '../../Presentionls/Logo/Logo'
 import PillButton from '../../Presentionls/PillButton/PillButton'
 import IconButton from '../../Presentionls/IconButton/IconButton'
@@ -16,16 +16,18 @@ const Header = () => {
                 <Logo />
             </LeftSide>
             <RightSide>
-                <PillButton icon='fas fa-plus' />
-                <IconButton width active='white' icon='fas fa-search' />
-                <IconButton width active='white' icon='far fa-bell' >
-                    <NotificationCircle right='header' />
-                </IconButton>
-                <IconButton width active='white' icon='fas fa-angle-down' >
-                    <NoneDisplayAvatar>
-                        <Avatar avatarImg={profile} />
-                    </NoneDisplayAvatar>
-                </IconButton>
+                <PillButton icon='fas fa-plus' text='Add' />
+                <IconsContainer>
+                    <IconButton active='white' icon='fas fa-search' />
+                    <IconButton active='white' icon='far fa-bell' >
+                        <NotificationCircle right='header' />
+                    </IconButton>
+                    <IconButton active='white' icon='fas fa-angle-down' >
+                        <NoneDisplayAvatar>
+                            <Avatar avatarImg={profile} />
+                        </NoneDisplayAvatar>
+                    </IconButton>
+                </IconsContainer>
             </RightSide>
         </StyledHeader>
     );

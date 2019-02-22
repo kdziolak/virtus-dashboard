@@ -24,6 +24,15 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (orientation: portrait) and (min-width: 768px){
         font-size: 14px;
     }
+    @media screen and (orientation:landscape) and (min-width: 1024px){
+        font-size: 10px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 12px;
+    }
+    @media screen and (min-width: 1600px){
+        font-size: 13px;
+    }
   }
   body{
     background-color: #2a2c3b;
@@ -35,7 +44,7 @@ const Row = styled.div`
     flex-grow: 1;
     flex: 20;
     display: flex;
-
+  margin-top:9vh;
 `
 
 const FlexContainer = styled.div`

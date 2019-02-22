@@ -14,9 +14,17 @@ export const StyledMenu = styled.nav`
         width: 100%;
         height: 14vh;
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (orientation:portrait) and (min-width: 1024px){
+        width: 7rem;
+        height:92vh;
+    }
+    @media screen and (orientation:landscape) and (min-width: 1024px){
         width: 7rem;
         height:91vh;
+    }
+    @media screen and (orientation:landscape) and (min-width: 1024px){
+        width: 7rem;
+        height:92vh;
     }
 `
 
@@ -45,7 +53,7 @@ export const StyledUl = styled.ul`
         height:auto;
         flex-direction: column;
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (orientation:landscape) and (min-width: 1024px), screen and (orientation:portrait) and (min-width: 1024px){
         width: 100%;
         height:auto;
         flex-direction: column;
@@ -61,24 +69,29 @@ export const StyledUl = styled.ul`
             will-change: transform;
         }
     }
+    
 
 `
 export const StyledLi = styled.li`
     height: 100%;
     width: 100%;
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 720px){
         width: 100%;
         height:6vw;
         &:hover {
             background-color: #3f4353;
         }
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (orientation:landscape) and (min-width: 1024px){
         width: 100%;
         height:6vw;
         &:hover {
             background-color: #3f4353;
         }
+    }
+    @media screen and (orientation:landscape) and (min-width: 1600px){
+        width: 100%;
+        height:4vw;
     }
 `
 
