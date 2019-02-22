@@ -1,7 +1,7 @@
 {
   "main.css": "/virtus-dashboard/static/css/main.8be2839d.chunk.css",
-  "main.js": "/virtus-dashboard/static/js/main.06ffb8f0.chunk.js",
-  "main.js.map": "/virtus-dashboard/static/js/main.06ffb8f0.chunk.js.map",
+  "main.js": "/virtus-dashboard/static/js/main.5bead4d5.chunk.js",
+  "main.js.map": "/virtus-dashboard/static/js/main.5bead4d5.chunk.js.map",
   "static/css/1.fe55d899.chunk.css": "/virtus-dashboard/static/css/1.fe55d899.chunk.css",
   "static/js/1.91807137.chunk.js": "/virtus-dashboard/static/js/1.91807137.chunk.js",
   "static/js/1.91807137.chunk.js.map": "/virtus-dashboard/static/js/1.91807137.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/profile.jpg": "/virtus-dashboard/static/media/profile.d4ca6094.jpg",
   "static/css/main.8be2839d.chunk.css.map": "/virtus-dashboard/static/css/main.8be2839d.chunk.css.map",
   "index.html": "/virtus-dashboard/index.html",
-  "precache-manifest.881490b9cfe7ae655f6fb5e16be4dcff.js": "/virtus-dashboard/precache-manifest.881490b9cfe7ae655f6fb5e16be4dcff.js",
+  "precache-manifest.1d5db8ebe0fa85f453d1767487c83438.js": "/virtus-dashboard/precache-manifest.1d5db8ebe0fa85f453d1767487c83438.js",
   "service-worker.js": "/virtus-dashboard/service-worker.js"
 }

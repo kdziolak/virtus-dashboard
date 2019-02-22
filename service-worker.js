@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/virtus-dashboard/precache-manifest.881490b9cfe7ae655f6fb5e16be4dcff.js"
+  "/virtus-dashboard/precache-manifest.1d5db8ebe0fa85f453d1767487c83438.js"
 );
 
 workbox.clientsClaim();
